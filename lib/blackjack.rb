@@ -70,6 +70,7 @@ def runner
  welcome
 the_card_sum =  initial_round
  the_card_sum = hit?(the_card_sum)
+ until the_card_sum > 21
  display_card_total
 end
     #"calls on the #welcome method, 
