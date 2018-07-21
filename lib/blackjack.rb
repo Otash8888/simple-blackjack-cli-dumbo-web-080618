@@ -7,9 +7,9 @@ def deal_card
   rand(1..11)
 end
 
-def display_card_total(the_card_total)
- # initial_round + the_card_total
-  puts "Your cards add up to #{the_card_total}"
+def display_card_total(the_card_sum)
+ 
+  puts "Your cards add up to #{the_card_sum}"
 end
 
 def prompt_user
