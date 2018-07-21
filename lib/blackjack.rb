@@ -33,8 +33,8 @@ def get_user_input
   input  
 end
 
-def end_game (the_card_total)
- puts "Sorry, you hit #{the_card_total}. Thanks for playing!"
+def end_game (the_card_sum)
+ puts "Sorry, you hit #{the_card_sum}. Thanks for playing!"
 end
 
 def initial_round
@@ -68,10 +68,11 @@ end
 def runner
  the_card_sum = 0
  welcome
-the_card_sum =  initial_round
+while the_card_sum < 21
+ the_card_sum =  initial_round
  the_card_sum = hit?(the_card_sum)
- until the_card_sum > 21
- display_card_total
+ end
+ end_game
 end
     #"calls on the #welcome method, 
   then on the #initial_round method, 
