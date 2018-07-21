@@ -47,15 +47,15 @@ def initial_round
   total
 end
 
-def hit? (the_card_total)
+def hit? (the_card_sum)
   prompt_user 
   new_input = get_user_input
   
   if new_input == "h"
     new_card = deal_card
-    the_card_total = the_card_total + new_card
+    the_card_sum = the_card_sum + new_card
   else
-  the_card_total
+  the_card_sum
   end
 end
 
@@ -66,9 +66,10 @@ end
 #####################################################
 
 def runner
+ the_card_sum = 0
  welcome
- initial_round
- hit?
+the_card_sum =  initial_round
+ the_card_sum = hit?(the_card_sum)
  display_card_total
 end
     #"calls on the #welcome method, 
