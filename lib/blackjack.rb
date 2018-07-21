@@ -8,12 +8,11 @@ def deal_card
 end
 
 def display_card_total(the_card_sum)
- 
-  puts "Your cards add up to #{the_card_sum}"
+ puts "Your cards add up to #{the_card_sum}"
 end
 
 def prompt_user
-puts "Type 'h' to hit or 's' to stay"
+ puts "Type 'h' to hit or 's' to stay"
 end
 
 def invalid_command
@@ -38,13 +37,13 @@ def end_game (the_card_sum)
 end
 
 def initial_round
-  total = 0 
+ total = 0 
   2.times do 
     cards = deal_card
     total = total + cards
   end
   display_card_total(total)
-  total
+ total
 end
 
 def hit? (the_card_sum)
