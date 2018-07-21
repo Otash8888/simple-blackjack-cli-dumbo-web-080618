@@ -72,6 +72,6 @@ def runner
  the_card_sum =  initial_round
  the_card_sum = hit?(the_card_sum)
   end
- end_game
+ end_game(the_card_sum)
 end
  
