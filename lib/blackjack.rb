@@ -68,14 +68,10 @@ end
 def runner
  the_card_sum = 0
  welcome
-while the_card_sum < 21
+  while the_card_sum < 21
  the_card_sum =  initial_round
  the_card_sum = hit?(the_card_sum)
- end
+  end
  end_game
 end
-    #"calls on the #welcome method, 
-  then on the #initial_round method, 
-  then calls #hit? and #display_card_total methods
-  -until- the card sum is greater than 21,
-  then calls on the #end_game method" 
+ 
